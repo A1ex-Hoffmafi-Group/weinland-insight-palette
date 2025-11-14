@@ -4,19 +4,19 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    text: "Herr Weinland hat uns durch die schwierigste Zeit unseres Unternehmens geführt. Seine Expertise und sein menschliches Verständnis waren unbezahlbar.",
-    author: "Mittelständisches Unternehmen",
-    role: "Geschäftsführung",
+    text: "Nach Jahren der finanziellen Belastung hat mir Herr Weinland den Weg in eine schuldenfreie Zukunft geebnet. Seine einfühlsame und professionelle Beratung hat mir neue Hoffnung gegeben.",
+    author: "Michael K.",
+    role: "Privatinsolvenz abgeschlossen 2023",
   },
   {
-    text: "Professionell, transparent und lösungsorientiert – so kann ich die Zusammenarbeit beschreiben. Dank seiner Hilfe haben wir einen Neustart geschafft.",
-    author: "Familienunternehmen",
-    role: "Inhaber",
+    text: "Herr Weinland hat mir in meiner dunkelsten Stunde zur Seite gestanden. Er hat mir nicht nur rechtlich geholfen, sondern mir auch wieder Mut gemacht. Heute bin ich schuldenfrei und kann neu anfangen.",
+    author: "Sandra T.",
+    role: "Privatinsolvenz abgeschlossen 2022",
   },
   {
-    text: "In einer Phase voller Unsicherheit war es beruhigend, einen so kompetenten Anwalt an unserer Seite zu haben. Klare Kommunikation und faire Lösungen.",
-    author: "Gläubigerversammlung",
-    role: "Vertretung",
+    text: "Die Privatinsolvenz war meine letzte Hoffnung. Herr Weinland hat den gesamten Prozess transparent begleitet und mir jeden Schritt erklärt. Endlich kann ich wieder durchatmen.",
+    author: "Thomas M.",
+    role: "Privatinsolvenz laufend",
   },
 ];
 
@@ -39,9 +39,9 @@ export function Testimonials() {
 
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="mb-4 text-foreground">Stimmen unserer Mandanten</h2>
+          <h2 className="mb-4 text-foreground">Stimmen aus der Privatinsolvenz</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Erfolg misst sich nicht nur in Zahlen – sondern in Vertrauen und Zufriedenheit
+            Echte Menschen, echte Neuanfänge – Vertrauen, das Zukunft schafft
           </p>
         </div>
 
