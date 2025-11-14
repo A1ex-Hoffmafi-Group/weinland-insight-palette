@@ -1,6 +1,6 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import trustImage from "@/assets/trust-image.jpg";
-import futureImage from "@/assets/future-image.jpg";
+import trustImage from "@/assets/trust-image.png";
+import futureImage from "@/assets/future-image.png";
 
 export function Values() {
   const { ref, isVisible } = useScrollAnimation();

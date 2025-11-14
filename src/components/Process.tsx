@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import processImage from "@/assets/process-image.jpg";
+import processImage from "@/assets/process-image.png";
 import { FileSearch, Scale, TrendingUp, CheckCircle } from "lucide-react";
 
 const steps = [

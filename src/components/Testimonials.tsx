@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import teamImage from "@/assets/team-image.jpg";
+import teamImage from "@/assets/team-image.png";
 import { Quote } from "lucide-react";
 
 const testimonials = [
