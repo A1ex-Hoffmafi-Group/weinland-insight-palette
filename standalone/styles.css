@@ -174,11 +174,15 @@ p {
     line-height: 1.8;
 }
 
-/* Animations */
+/* =====================
+   ANIMATIONS
+===================== */
+
+/* Keyframe Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(40px);
     }
     to {
         opacity: 1;
@@ -195,43 +199,171 @@ p {
     }
 }
 
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes blendIn {
+    from {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Animation Classes */
 .fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
 }
 
 .fade-in {
     animation: fadeIn 0.8s ease-out forwards;
-}
-
-.delay-200 {
-    animation-delay: 0.2s;
     opacity: 0;
 }
 
-.delay-400 {
-    animation-delay: 0.4s;
+.slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
     opacity: 0;
 }
 
-.delay-600 {
-    animation-delay: 0.6s;
+.slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
     opacity: 0;
 }
 
-.delay-800 {
-    animation-delay: 0.8s;
+.scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
     opacity: 0;
 }
 
+.blend-in {
+    animation: blendIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+.float-in {
+    animation: floatIn 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    opacity: 0;
+}
+
+/* Delay Classes */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-800 { animation-delay: 0.8s; }
+
+/* Scroll Animation Classes */
 .animate-on-scroll {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .animate-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.animate-on-scroll.slide-left {
+    transform: translateX(-40px);
+}
+
+.animate-on-scroll.slide-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-on-scroll.slide-right {
+    transform: translateX(40px);
+}
+
+.animate-on-scroll.slide-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-on-scroll.scale {
+    transform: scale(0.95);
+}
+
+.animate-on-scroll.scale.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.animate-on-scroll.blur {
+    filter: blur(8px);
+    transition: opacity 0.8s ease-out, filter 0.8s ease-out;
+}
+
+.animate-on-scroll.blur.visible {
+    opacity: 1;
+    filter: blur(0);
+}
+
+/* Card Hover Effects */
+.expertise-card,
+.value-card,
+.process-step,
+.testimonial-card {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                box-shadow 0.3s ease;
+}
+
+.expertise-card:hover,
+.value-card:hover,
+.process-step:hover,
+.testimonial-card:hover {
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
 }
 
 /* Sections */
